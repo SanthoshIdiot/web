@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding:0;
+        }
+        
+        .swirl-in-top-fwd {
+	-webkit-animation: swirl-in-top-fwd 0.6s ease-out both;
+	        animation: swirl-in-top-fwd 0.6s ease-out both;
+}
+        
+        .page{
+            height: 100vh;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-image: url("https://tse3.mm.bing.net/th?id=OIP.wZO7tiAqosdwDmlueMmXDQHaEK&pid=Api&P=0&h=180");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .formt{
+            padding: 10px;
+            width: 325px;
+            background-color: white;
+            text-align: center;
+            transition: all 2s ease 0s;
+        }
+        .formitem{
+            padding: 10px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            transition: all 2s;
+
+        }
+        .formitem>button{
+            background-color:#0866FF;
+            width: 91%;
+            color: white;
+            padding: 10px;
+            border-radius: 10px;
+            border: none;    
+        }
+        h1{
+            text-align: center;
+            padding: 15px 0px 15px 0px;
+             
+
+   @-webkit-keyframes swirl-in-top-fwd {
+  0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+            transform: rotate(-540deg) scale(0);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    opacity: 1;
+  }
+}
+@keyframes swirl-in-top-fwd {
+  0% {
+    -webkit-transform: rotate(-540deg) scale(0);
+            transform: rotate(-540deg) scale(0);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotate(0) scale(1);
+            transform: rotate(0) scale(1);
+    -webkit-transform-origin: 50% 0;
+            transform-origin: 50% 0;
+    opacity: 1;
+  }
+}
+
+        
+
+           
+        }
+        h1:hover{
+            color: ;
+            transform: rotate(360deg,360deg);
+        }
+        .formitem>input{
+            width: 85%;
+            padding: 10px;
+        }
+        img{
+            height: 15px;
+        }
+        a{
+            text-decoration: none;
+            text-decoration: ;
+        }
+        .formt1{
+            padding: 10px;
+            width: 325px;
+            background-color: white;
+            text-align: center;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        } 
+        
+    </style>
+    
+
+</head>
+<body>
+    <div class="page">
+      <form action="">
+      <div class="formt">
+        <h1 class="swirl-in-top-fwd">Instagram</h1><br>
+            <div class="formitem">
+                  <label for="username"></label>
+                  <input type="text" id="username" placeholder="Phone number,username,or email">
+            </div>
+            <div class="formitem">
+                <label for="password"></label>
+                <input type="password" id="password" placeholder="Password">
+            </div>
+            <div class="formitem">
+                <button>Log In</button>
+            </div>
+            <div class="formitem"></div><hr>
+            <div class="formitem"><a href=""><img src="https://tse2.mm.bing.net/th?id=OIP.T5VrbJ6XosfdUtseiJrgVwHaHa&pid=Api&P=0&h=180" alt="">Log in with Facebook</a></div>
+            <div class="formitem"><a href="">Forgot Password?</a></div><br>
+        </div>
+    <br>
+        <div class="formt1">
+             Don't have an account?<a href="">Sign up.</a>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
